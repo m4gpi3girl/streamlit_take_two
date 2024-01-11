@@ -43,7 +43,7 @@ def main():
             df_info = read_csv(uploaded_file)
 
             # read geog data
-            imd_info = pd.read_csv('pc_data.csv')
+            imd_info = pd.read_csv(r"C:/Users/Elisha.Zissman/OneDrive - Social Investment Business/Desktop/streamlit_pc/pc_data.csv")
 
             # merge csv and imd data
             new_df = df_info.merge(imd_info, left_on='Postcode', right_on='pcds', how='left')
